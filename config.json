@@ -4,7 +4,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "bt",
+        "name": "bttracker",
         "uri": "https://raw.githubusercontent.com/finexss/geobt/refs/heads/main/bt-ip.txt"
       }
     },
@@ -47,41 +47,6 @@
     {
       "type": "text",
       "action": "output"
-    },
-    {
-      "type": "text",
-      "action": "output",
-      "args": {
-        "outputDir": "./output/nginx/allow",
-        "outputExtension": ".conf",
-        "addPrefixInLine": "allow ",
-        "addSuffixInLine": ";"
-      }
-    },
-    {
-      "type": "text",
-      "action": "output",
-      "args": {
-        "outputDir": "./output/nginx/deny",
-        "outputExtension": ".conf",
-        "addPrefixInLine": "deny ",
-        "addSuffixInLine": ";"
-      }
-    },
-    {
-      "type": "clashRuleSetClassical",
-      "action": "output"
-    },
-    {
-      "type": "clashRuleSet",
-      "action": "output"
-    },
-    {
-      "type": "surgeRuleSet",
-      "action": "output",
-      "args": {
-        "addSuffixInLine": ",no-resolve"
-      }
     }
   ]
 }
