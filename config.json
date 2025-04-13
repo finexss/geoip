@@ -7,17 +7,6 @@
         "name": "bttracker",
         "uri": "https://raw.githubusercontent.com/finexss/geobt/refs/heads/main/bt-ip.txt"
       }
-    },
-    {
-      "type": "v2rayGeoIPDat",
-      "action": "add",
-      "args": {
-        "uri": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat"
-      }
-    },
-    {
-      "type": "private",
-      "action": "add"
     }
   ],
   "output": [
@@ -26,7 +15,7 @@
       "action": "output",
       "args": {
         "outputDir": "./output",
-        "outputName": "geoip.dat"
+        "outputName": "bt.dat"
       }
     },
     {
