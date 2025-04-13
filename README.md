@@ -1,17 +1,35 @@
 # 简介
 2025-04--12：生成文件bt.dat,仅有一个IP标签：bttracker，收集多个来源获取到的BT trackers IP,使用方法：
-        "rules": 
-        [
-            {
-                "type": "field",
-                "ip": 
-                [
-                    "ext:bt.dat:bttracker"
-                ],
-                "outboundTag": "block"
-            }
-        ]
+XRAY：
+  - `        "rules": 
+  - `       [
+  - `            {
+  - `               "type": "field",
+   - `               "ip": 
+   - `              [
+   - `                   "ext:bt.dat:bttracker"
+   - `              ],
+   - `              "outboundTag": "block"
+   - `          }
+   - `       ]
+Singbox：
+   - `      {
+   - `        "rule_set": [
+   - `          "btip-bttracker",
+   - `          "btsite-bttracker"
+   - `        ],
+   - `        "outbound": "block"
+   - `      },
+TAG：
+   - `      {
+   - `        "tag": "btip-bttracker",
+   - `        "type": "remote",
+   - `        "format": "binary",
+   - `        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-public-tracker.srs",
+   - `       "download_detour": "IPv4_out"
+   - `      },
 
+   - --------------------------------------------------------------------
 本项目每周四自动生成多种格式 GeoIP 文件，同时提供命令行界面（CLI）工具供用户自行定制 GeoIP 文件，包括但不限于 V2Ray `dat` 格式文件 `geoip.dat`、MaxMind `mmdb` 格式文件 `Country.mmdb`、sing-box `SRS` 格式文件、mihomo `MRS` 格式文件、Clash ruleset 和 Surge ruleset。
 
 This project releases various formats of GeoIP files automatically every Thursday, and provides a command line interface(CLI) tool for users to customize their own GeoIP files, including but not limited to V2Ray `dat` format file `geoip.dat`, MaxMind `mmdb` format file `Country.mmdb`, sing-box `SRS` format files, mihomo `MRS` format files, Clash ruleset files and Surge ruleset files.
