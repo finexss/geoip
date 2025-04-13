@@ -39,6 +39,14 @@ TAG：
         "url": "https://raw.githubusercontent.com/finexss/geoip/refs/heads/release/srs/bttracker.srs",
        "download_detour": "IPv4_out"
       },
+      {
+        "tag": "btsite-bttracker",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/finexss/meta-rules-dat/refs/heads/sing/geo/geosite/bttracker.srs",
+       "download_detour": "IPv4_out"
+      },
+
 ```
 <hr>
 
