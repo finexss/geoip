@@ -5,15 +5,13 @@ Xray：
 
 
 ```
-       "rules": 
-      [
-           {
-              "type": "field",
-               "ip": 
-              [
+        "rules": [
+            {
+                "type": "field",
+                "outboundTag": "block",
+                "ip": [
                    "ext:bt.dat:bttracker"
-              ],
-              "outboundTag": "block"
+                ]
           }
        ]
 ```
@@ -38,7 +36,7 @@ TAG：
         "tag": "btip-bttracker",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-public-tracker.srs",
+        "url": "https://raw.githubusercontent.com/finexss/geoip/refs/heads/release/srs/bttracker.srs",
        "download_detour": "IPv4_out"
       },
 ```
