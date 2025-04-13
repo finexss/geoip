@@ -4,7 +4,8 @@ Xray：
 <hr>
 
 
-```       "rules": 
+```
+       "rules": 
       [
            {
               "type": "field",
