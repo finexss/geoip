@@ -1,6 +1,12 @@
 # 简介
 2025-04--12：生成文件btip.dat,仅有一个IP标签：bttracker，收集多个来源获取到的BT trackers IP,使用方法：
+
 Xray：
+geoip文件：
+https://raw.githubusercontent.com/finexss/geoip/refs/heads/release/btip.dat
+geosite文件：
+https://raw.githubusercontent.com/finexss/meta-rules-dat/refs/heads/release/geosite.dat
+
 <hr>
 
 
