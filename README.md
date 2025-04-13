@@ -1,5 +1,16 @@
 # 简介
-2025-04--12：增加了bttracker标签，收集多个来源获取到的BT trackers IP
+2025-04--12：生成文件bt.dat,仅有一个IP标签：bttracker，收集多个来源获取到的BT trackers IP,使用方法：
+        "rules": 
+        [
+            {
+                "type": "field",
+                "ip": 
+                [
+                    "ext:bt.dat:bttracker"
+                ],
+                "outboundTag": "block"
+            }
+        ]
 
 本项目每周四自动生成多种格式 GeoIP 文件，同时提供命令行界面（CLI）工具供用户自行定制 GeoIP 文件，包括但不限于 V2Ray `dat` 格式文件 `geoip.dat`、MaxMind `mmdb` 格式文件 `Country.mmdb`、sing-box `SRS` 格式文件、mihomo `MRS` 格式文件、Clash ruleset 和 Surge ruleset。
 
