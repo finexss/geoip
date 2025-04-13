@@ -12,8 +12,14 @@ Xray：
                 "ip": [
                    "ext:btip.dat:bttracker"
                 ]
-          }
-       ]
+          },
+            {
+                "type": "field",
+		"outboundTag": "block",
+                "domain": [
+		    "geosite:bttracker"
+                ]
+          },
 ```
 <hr>
 
