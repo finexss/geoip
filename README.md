@@ -1,5 +1,5 @@
 # 简介
-2025-04--12：生成文件bt.dat,仅有一个IP标签：bttracker，收集多个来源获取到的BT trackers IP,使用方法：
+2025-04--12：生成文件btip.dat,仅有一个IP标签：bttracker，收集多个来源获取到的BT trackers IP,使用方法：
 Xray：
 <hr>
 
@@ -10,7 +10,7 @@ Xray：
                 "type": "field",
                 "outboundTag": "block",
                 "ip": [
-                   "ext:bt.dat:bttracker"
+                   "ext:btip.dat:bttracker"
                 ]
           }
        ]
